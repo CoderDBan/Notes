@@ -1,0 +1,250 @@
+gcp llm, google search, cloud, vision
+ 
+azure open ai
+azure web app api
+azure function
+seed up api azure remis
+azure sql db
+store file - azure blob
+ocr path - doc intelligence service - get text from stan pdf - generate summary etc
+azure data bricks
+pyspark
+ 
+ 
+langchain agent creation
+vector db - pinecone, rediss, mongodb, azure cognitive search, aws elastic stores
+ 
+handle huge number of docs - which vector db we have to use?
+ml basic understanding - reg, classifi, clustering, how to evaluate, missing value value treatmnet, data transformation
+time series model
+ 
+NLP - name entity rec, active text rec, text classification
+ 
+gen ai
+rest api, db concept
+feature engineering
+ 
+ 
+cloud services, application integration, gen ai
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+GENERAL CLOUD COMPUTING
+------------------------
+
+Q. What is Cloud?
+A. The cloud can re referred as global network of servers, each with a unique function. These servers are designed to store and manage data or to run various applications or to deliver content and have many more functionalities.
+Servers are located in data centers across the world. Services includes: Compute, storage, databases, networking etc.
+
+Q. What is Cloud Computing?
+A. Cloud Computing is on demand availability of computer system resources like power, storage, databases and so on. With cloud computing we don't have to buy, own or maintain physical data centers and servers, we can also rent these resources whenever we need from a cloud provider. 
+
+Q. List the types of Service Models available for cloud computing.
+A. Infrastructure as a Service (IaaS) - IT infrastructures, servers, virtual machines, storage, networks and operating systems.
+	 Platform as a Service (Paas) - Provides on demand environment for software applications.
+	 Software as a Service (SaaS) - Cloud provider leases applications/ software owned by them to the client.
+
+Q. List the types of Cloud Deployment models.
+A. Public Cloud - Resources are available to general public over the internet. (Free/ paid as per usage), 
+	Private Cloud - It is operated solely by a single organization, 
+	Hybrid Cloud - It is a combination of public and private cloud,
+	Community Cloud - It is shared between several organizations in a community.
+
+Q. What are the benefits of cloud computing?
+A. 1. Reduces cost of managing and maintaining IT systems or infrastructure.
+	2. Scalability of IT resources
+	3. Better productivity and collaboration efficiency
+	4. Data backup and storage
+	5. Automatic updates
+
+Q. What is EUCALYPTUS?
+A. Elastic Utility Computing Architecture for Linking Your Programs To Useful Systems (EUCALYPTUS) is a software service for implementation of cloud clusters in cloud computing platform. It can create private, public or hybrid clouds. It has the ability to transform a data center to a private cloud. It also helps users to utilize its functionalities across other organizations.
+
+---------------------------------------------------------------------------------------------------
+---------------------------------------------------------------------------------------------------
+
+GOOGLE CLOUD PLATFORM
+----------------------
+
+Q. What is GCP?
+A. Google Cloud Platform is a cloud service provider, it is a suite of cloud computing services and management tools offered by google. GCP runs in the same cloud infrastructure that google uses for it's other end user products like gmail, google photos, youtube etc.
+
+Q. What are the services offered by GCP?
+A. Services offered by GCP are: 
+	i. Compute (VM services)
+	ii. Storage & Databases (Cloud SQL, Cloud Spanner, Cloud Datastore etc)
+	iii. Networking (Virtual Private Cloud, Packet Mirroring, Firewall rules)
+	iv. Big Data (Big Query, Cloud Storage etc)
+	v. Identity and Security (reCAPTCHA)
+	vi. Internet of Things (google smart home, google cloud IOT, cloud SQL)
+	vii. Cloud AI (google maps)
+
+Q. What is Google Cloud SDK?
+A. Google Cloud Software Development Kit is a set of command line tools. It is used for the development of google cloud. With these tools we can access the compute engine, cloud storage, big query and other services directly from the command line.
+
+Q. What is Google Cloud API?
+A. Google Cloud API are programmatic interfaces for GCP services. It is used for adding the power of GCP services (eg: computing, storage & database, AI etc) to our applications.
+
+Q. Why would you prefer GCP over other cloud service provider?
+A. i. better pricing deals
+	ii. increased performance and services
+	iii. very fast in providing updates on server and security
+	iv. excellent security of GCP
+
+Q. What is project in GCP and how to create one?
+A. A project organizes all google cloud resources. It consists of a set of APIs; billing, authentication and monitoring settings for the APIs.
+
+Q. What is Cloud Shell?
+A. Cloud Shell is an online development & operations platform which is accessible from anywhere with our browser. We can manage our resources with the online terminal preloaded with utilities like gcloud command line tool etc. We can also develop, build, deploy our cloud based apps using the cloud shell.
+
+Q. What are Availability Zones and Regions? How many Availability Zones are there in gcp?
+A. Regions are geographic locations that are used for hosting resources. Availability Zones are isolated locations within a region which is used to provide public services to users.
+	There are 25 regions and 76 zones in google cloud's global network.
+
+Q. How would you choose a Availability Zone?
+A. i. Latency - Opt for region closer to majority customer base for providing fast connection to server and better performance in terms of quick loading and transfer times which helps in better user experience providing low latency.
+	ii. Cost - different regions have different cost for resources.
+
+COMPUTING AND HOSTING
+----------------------
+
+Q. What is Google Compute Engine?
+A. It is a compute service which allows to run virtual machines in google's infrastructure. (IAAS)
+
+Q. What is Google App Engine?
+A. It is a fully managed, serverless platform for developing and hosting web applications at scale. (PAAS)
+
+Q. What is Serverless Computing?
+A. It is cloud computing execution model in which cloud provider provides machine resources on demand to the client/ host. Maintains the server on behalf of the host.
+
+Q. How does a pricing model work in GCP cloud?
+A. Charging for a GCP user depends on compute instance, network use and storage.
+   Charging of virtual machine is based on per second of usage with the limit of minimum 1 minute.
+   Cost of storage is based on amount of data that is stored.
+   Cost of network is calculated based on amount of data that has been transferred between virtual cloud machines communicating with each other over the network.
+
+Q. What is Google Kubernetes Engine?
+A. Google Kubernetes Engine provides a managed environment for deploying, managing and scaling containerized applications using google cloud infrastructure.
+
+Q. If I want to run my application on GCP then which application should I use?
+A. Google Compute Engine - If I want to run the application on a customizable VM platform.
+   Google Kubernetes Engine - If you want to run a containerized application.
+   Google App Engine - If you do not want to manage the infrstructure but to just deploy the application.
+   Cloud Functions - Run the application after an event driven function.
+
+Q. How to migrate servers and VMs from on-premises or another cloud to Compute Engine on GCP?
+A. Google provides a cloud software also known as Cloud Migrate for compute Engine that is used to migrate the VMs from on-premise data center and other cloud platforms into google compute engine and this software comes with no additional cost.
+
+Q. Why should we opt for google cloud hosting?
+A. i. Provides better pricing plans.
+   ii. Benefits of live migration of virtual machines, which means we can migrate a running VM to and from on premise or cloud.
+   iii. Enhanced performance and execution.
+   iv. Strong control and security of the cloud platform.
+   v. Inbuilt redundant backups ensure data integrity and reliability.
+
+Q. What are shielded VMs?
+A. Shielded VMs are VMs on Google Cloud hardened by a set of security controls that help to defend against threat like malicious project insiders, malicious guest firmware and kernel-or user mode vulnerabilities.
+
+
+STORAGE AND DATBASES
+---------------------
+
+Q. What is Cloud storage?
+A. Google provides a storage facility of objects in Google cloud. Objects can be files of any format. The objects are stored in containers called buckets.
+
+Q. What are buckets in cloud storage?
+A. Buckets are basic containers that hold data. Buckets are used to organize the data and give control access to the data for the users.
+
+Q. What are the types of GCP storages available and in what scenarios do we use them?
+A. i. Cloud Storage
+   ii. Google Drive: It is used to store, manage and share personal files.
+   iii. Cloud Storage for Firebase: It helps to manage data for mobile applications.
+   iv. Persistent Disk: Add block storage to compute engine virtual machine.
+   v. Filestore: It is used to store file or create a file-based workload.
+
+Q. What is Object versioning in GCP?
+A. A non-concurrent version of object is created every time an object the updated or deleted in google cloud bucket. It is used to retrieve the old version after the object is overwritten or deleted. This increases storage cost but also enhances security.
+
+Q. What are the libraries and tools for cloud storage on GCP?
+A. Console: The Google Clous Storage provides a visual interface for us to manage data and perform basic operations.
+   gsutil: It allows us to interact in cloud storage through terminal.
+   Client Libraries: Cloud Storage client libraries provides libraries in different languages to manage and access the data in cloud storage.
+   REST APIs: Manage data using JSON and XML APIs.
+
+Q. How can I maximize the availability of the data?
+A. We should store the data into buckets from multi-regional or dual-regional locations so that we can have continued availability even during rare events of region-wide outage, including ones caused by natural disasters.
+
+Q. What is Cloud SQL?
+A. Cloud SQL is a fully managed database service that helps to setup, maintain, manage and administer our relational database on GCP. We can use Cloud SQL with MySQL, PostgreSQL or SQL Server.
+
+Q. How would you choose the right Google Cloud Database service?
+A. i. Cloud SQL: It provides relational database capabilities but do not require storage capacity over 10 TB or more than 4000 concurrent connections.
+   ii. Cloud Spanner: It is used when data size is more than 10TB and require transactional consistency.
+   iii. Cloud Firestore/ Datastore: It is used for app development and live synchronization and offline support.
+   iv. Cloud Bigtable: It is useful for high amounts of single key data. It is good for low latency, high throughput workloads.
+   v. Cloud Memorystore: It is a good option if we are using key-value datasets and we have high concerns over latency.
+
+Q. Can my App Engine in one region access the Cloud SQL instance which is present in a different region?
+A. Yes! If we are connecting to MySQL in one region then the App Engine must not be in the same region, and it can be running in either the standard or flexible environment. Hower, larger the distance, it causes more latency for connecting to database.
+
+Q. Can I import or export a specific database in GCP?
+A. Yes! For MySQL instances we can export and import single/ multiple datasets. For PostgreSQL we can import and export only a specific database.
+
+NETWORKING
+-----------
+
+Q. What is Google Cloud VPC?
+A. Virtual Private Cloud (VPC) in GCP is a virtual network that provides connectivity to the VM instance, it can be compute engine, Google Kubernetes Engine clusters, App Engine flexible environment and other Google Cloud products built on Compute Engine VMs. 
+
+Q. How is Google VPC different from any other cloud service provider's VPC?
+A. VM present in one region cannot interact with VM in other region. It can only be done through VPN gateway. VM in one region can interact with VM in another region other than VPN gateway.
+
+Q. What are routes and Firewall rules?
+A. Routes tell the VM instance and the VPC network how to send the traffic from one instance to a destination , either inside the network or outside the Google Cloud, which is internet. 
+   Firewall rules allow to control which packet can travel to which destination which destination. It also lets allow or deny connection to or from my VM instances based on specified configurations.
+
+Q. What is Load Balancing?
+A. Load Balancing is the process to distribute the computing resources and workloads in a cloud computing environment to manage the demands. By spreading the load, load balancing reduces the risk of performance issues. By using Cloud Load Balancing, we can serve content as close as possible to users.
+
+Q. What is Cloud DNS?
+A. DNS is easily readable domain names that translate website names into IP addresses. Cloud DNS is a Domain Name System that publishes our domain names into global DNS in a cost effective way.
+
+Q. How can I connect an existing network to Google Cloud Resources?
+A. Cloud Interconnect - 
+   Cloud VPN - 
+   Direct Peering - 
+   Career Peering - 
+
+Q. Describe some of the security aspects that cloud offers.
+A. Access Control, Identity Management, Authorization & Authentication.
+
+Q. List some of the GCP security services.
+A. Cloud Security Command Center:
+   Cloud Armor:
+   Cloud Identity: 
+
+OTHER GCP SERVICES
+-------------------
+
+Q. What is Google Big Query?
+A. Google Big Query is the Google Cloud's fully managed, petabyte-scale, and cost effective data warehouse that lets us run analytics over vast amount of data in near real time. It's a replacement of traditional hardware data warehouse.
+
+Q. What are the Big Data services offered by Google?
+A. Google Cloud BigQuery, Google Cloud Dataflow, Google Cloud DataProc, Google Cloud Pub/Sub, Google Cloud Composer, Google Cloud Bigtable, Google Cloud Data Catalog.
+
+Q. What is Google Cloud Dataflow?
+A. It provides managed service that helps us to perform batch and streaming data processing tasks. It works well for high volume workloads.
+
+Q. What is Cloud AutoML?
+A. It enables programmers with limited knowledge on ML and programming expertise to develop high quality models. It allows us to use Google's ML capabilities to create custom ML models which are then integrated into our application and websites.
+
+Q. Explain Google Cloud AI Platform.
+A. It is a suite of services in Google Cloud targeted at building, deploying and managing machine learning models in the cloud. AI platform provides the services we need to train and evaluate our training model in the cloud.
+
+Q. What is Cloud IOT Core?
+A. It is used to connect, manage and store data from millions of devices that are stored globally. It provides a complete solution for collecting, processing, analyzing and visualizing IoT data in real time to support improved operational efficiency.
+
+Q. What service would you use for text analysis in GCP?
+A. Natural Language AI enables us to analyse text also integrate with document storage on cloud. We can extract information about people, places and events better, understand social media sentiments and customer conversations.
+
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
